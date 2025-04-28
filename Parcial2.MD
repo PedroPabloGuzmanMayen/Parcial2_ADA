@@ -14,7 +14,7 @@ El objetivo del problema es
 
 ### Explique una idea/solución que exhiba subproblemas traslapados e indique cómo los mismos subproblemas se computan repetidamente.
 
-![hola](https://github.com/PedroPabloGuzmanMayen/Parcial2_ADA/blob/main/p1.png)
+![alt text](p1.png)
 
 ### Escriba un código en Python con enfoque de memoización top-down que resuelva este problema
 
