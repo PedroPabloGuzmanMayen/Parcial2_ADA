@@ -26,8 +26,17 @@ El objetivo del problema es
 
 Para hallar la complejidad de este algoritmo, primero definiremos una ecuación de recurrencia. Sabemos que la solución para un dígito en específico esta dada por las soluciones de sus dígitos adyacentes en el teclado . También sabemos que debemos hallar la solución para cada uno de los dígitos del teclado (0-9). 
 
-Por esa razón, primero definiremos una función para hallar una función 
+Por esa razón, primero definiremos una función para hallar una ecuación de recurrencia para hallar el total de combinaciones para un dígito en específico.
 
+Sea A(e) el conjunto de números adyacentes para un dígito e y sea d un dígito entre 0 y 9 y n un número $\in N$ , tenemos: 
+
+$$
+F(d, n) =
+\begin{cases}
+1, & \text{si } n = 0  \\\\
+\sum F(a, n-1) para toda a $\in Adj(d)$, & \text{si } n > 0 \\\\
+\end{cases}
+$$
 
 
 ### Usando su programa, encuentre las combinaciones totales posibles para  n  = 10.
