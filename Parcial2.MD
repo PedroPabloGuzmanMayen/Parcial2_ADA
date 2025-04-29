@@ -34,7 +34,7 @@ $$
 F(d, n) =
 \begin{cases}
 1, & \text{si } n = 0  \\\\
-\sum F(a, n-1) para toda a $\in Adj(d)$, & \text{si } n > 0 \\\\
+\sum F(a, n-1)   para toda a \in Adj(d), & \text{si } n > 0 \\\\
 \end{cases}
 $$
 
