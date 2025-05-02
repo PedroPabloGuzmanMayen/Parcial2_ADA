@@ -16,6 +16,8 @@ El objetivo del problema es
 
 ![alt text](p1.png)
 
+El problema exhibe traslape de subproblemas ya que hay varios subproblemas que se repiten. Por ejemplo: en el árbol de subproblemas se puede observar que hay que resolver varias veces como el del 1 o el del 5. 
+
 ### Escriba un código en Python con enfoque de memoización top-down que resuelva este problema
 
 [Repositorio](https://github.com/PedroPabloGuzmanMayen/Parcial2_ADA.git)
@@ -34,12 +36,29 @@ $$
 F(d, n) =
 \begin{cases}
 1, & \text{si } n = 0  \\\\
-\sum F(a, n-1)   para toda a \in Adj(d), & \text{si } n > 0 \\\\
+\sum F(a, n-1) \text{ para toda a}  \in A(d), & \text{si } n > 0 \\\\
 \end{cases}
 $$
 
+Ahora formaremos una ecuación para evaluar las combinaciones posibles de todos los dígitos posibles
+$$
+G(n) = \sum F(d, n) para d \in {0,1,2,3,4,5,6,7.8,9}
+$$
+
+Ya con la ecuación de la complejidad, formaremos un árbol de recursión para hallar la complejidad del problema
+
+![alt text](p1.png)
+
+
+En la imágen se puede observar que en el peor de los casos el nodo se dividirá en 4 subproblemas si es que el dígito tiene 4 teclas adyacentes, también se observa que el árbol tendrá un máximo de n niveles ya que se hará la recursión n-1 veces pero debemos tener en cuenta el nivel del problema inicial. Cada estado se ejecutará exactamente solo 1 vez gracias a la memoización. Otro detalle importante es que cada nodo del árbol solamente debe iterar sobre las teclas adyacentes y consultar la tabla de memoización, estas operaciones son son de tiempo constante por lo que tenemos que el costo por nodo es $$O(1)$$. También se debe tener en cuenta que se deben hacer las operaciones 10 veces ya que debemos hacerlas para cada dígito posible en el teclado. Por lo tanto, sabemos que cada nodo se ejecuta una sola vez y que debe repetirse el proceso 10 veces para tener en cuenta los casos de cada número del teclado, por esa razón tenemos queel trabajo total es de $$O(10n)$$
+
+Por lo tanto, la complejidad temporal total del problema es de $$O(n)$$
 
 ### Usando su programa, encuentre las combinaciones totales posibles para  n  = 10.
+
+Usando el programa realizado, el resultado con n = 10 es: 1806282
+
+
 
 
 
