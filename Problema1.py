@@ -1,14 +1,6 @@
 #Problema 1: teclado Nokia
 
 
-#Definición del teclado
-
-teclado = [
-    ['1', '2', '3'],
-    ['4', '5', '6'],
-    ['7', '8', '9'],
-    ['*', '0', '#']
-]  
 
 #En este diccionario almacenamos los valores adyacentes
 
@@ -46,4 +38,4 @@ def contar_combinaciones(n):
         total += dp(digito, n-1)
     return total
 
-print(contar_combinaciones(10))
+print(contar_combinaciones(2))

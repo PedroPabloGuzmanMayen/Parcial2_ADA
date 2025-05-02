@@ -10,7 +10,8 @@ El teclado también contiene las teclas  ∗  y #, las cuales no están permitid
 
 ### Explicar porque este problema exhibe subestructura óptima
 
-El objetivo del problema es 
+Este problema exhibe subestructura óptima porque el resultado para una secuencia de longitud n puede construirse a partir de los resultados para secuencias de longitud n-1.
+En cada paso, el número de combinaciones posibles desde un dígito particular depende únicamente de las combinaciones posibles desde sus dígitos adyacentes. Esta propiedad permite dividir el problema en subproblemas más pequeños cuyas soluciones se pueden combinar para obtener la solución general del problema inicial. 
 
 ### Explique una idea/solución que exhiba subproblemas traslapados e indique cómo los mismos subproblemas se computan repetidamente.
 
@@ -22,6 +23,9 @@ El problema exhibe traslape de subproblemas ya que hay varios subproblemas que s
 
 [Repositorio](https://github.com/PedroPabloGuzmanMayen/Parcial2_ADA.git)
 
+[Gist](https://gist.github.com/PedroPabloGuzmanMayen/1aa4d7fc25e63385632a653384d1b3e9)
+
+[Video](https://youtu.be/E60MLG6maBM)
 
 
 ### Encuentre el tiempo de complejidad para este algoritmo.
@@ -57,14 +61,19 @@ Por lo tanto, la complejidad temporal total del problema es de $$O(n)$$
 Usando el programa realizado, el resultado con n = 10 es: 1806282
 
 
-
+![alt text](solucion.png)
 
 
 
 ## Problema 2
 
-Dada una matriz cuadrada de 0’s y 1’s, calcule el tamaño de la cruz (símbolo de suma +) más grande  
-formada por 1’s
+Dada una matriz cuadrada de 0’s y 1’s, calcule el tamaño de la cruz (símbolo de suma +) más grande formada por 1’s
+
+[Video](https://youtu.be/aOkGQM00JMM)
+[Gist](https://gist.github.com/PedroPabloGuzmanMayen/1c39767c42f859c8a006bcc712119f01)
+[repo](https://github.com/PedroPabloGuzmanMayen/Parcial2_ADA.git)
+
+### Análisis de complejidad.
 
 ## Problema 3
 
