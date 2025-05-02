@@ -41,9 +41,7 @@ F(d, n) =
 $$
 
 Ahora formaremos una ecuación para evaluar las combinaciones posibles de todos los dígitos posibles
-$$
-G(n) = \sum F(d, n) para d \in {0,1,2,3,4,5,6,7.8,9}
-$$
+$$G(n) = \sum F(d, n) para d \in {0,1,2,3,4,5,6,7.8,9}$$
 
 Ya con la ecuación de la complejidad, formaremos un árbol de recursión para hallar la complejidad del problema
 
